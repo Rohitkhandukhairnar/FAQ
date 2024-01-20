@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="2dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code Name"
+            android:id="@+id/code_name"
+            android:textSize="22sp"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expadabale_layout"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/version"
+                android:text="Version"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/api_level"
+                android:text="Api Level"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:textColor="@color/dark_gray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:text="Ddescription view"
+                android:layout_below="@+id/version"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_gray"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
